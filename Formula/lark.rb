@@ -5,21 +5,21 @@
 class Lark < Formula
   desc "A Go CLI for Feishu/Lark inspired by gog"
   homepage "https://github.com/rintays/lark"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rintays/lark/releases/download/v0.1.4/lark_0.1.4_darwin_amd64.tar.gz"
-      sha256 "e3b72bc9d4948d4dcd60e5b0e7ec1d6f82334877e13dd5db828245e38568fa9e"
+      url "https://github.com/rintays/lark/releases/download/v0.1.5/lark_0.1.5_darwin_amd64.tar.gz"
+      sha256 "aca6cf4e5313786ac0c219139ae464d8bc83f006fce059e1711fe05f7937f9bb"
 
       def install
         bin.install "lark"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rintays/lark/releases/download/v0.1.4/lark_0.1.4_darwin_arm64.tar.gz"
-      sha256 "ce1bab2f2dd66df13436d30f4e54be38e942b896619e260db023e7a11892f5b8"
+      url "https://github.com/rintays/lark/releases/download/v0.1.5/lark_0.1.5_darwin_arm64.tar.gz"
+      sha256 "6141b4d844cf227f4c657a534b7464a5f23119f3f76eb3a9665e5d99308e31a6"
 
       def install
         bin.install "lark"
@@ -29,15 +29,15 @@ class Lark < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rintays/lark/releases/download/v0.1.4/lark_0.1.4_linux_amd64.tar.gz"
-      sha256 "26ee5f771b3d0d8970d5b622c6a9392d72de626e53fa2839bc7154ebbc1f8be5"
+      url "https://github.com/rintays/lark/releases/download/v0.1.5/lark_0.1.5_linux_amd64.tar.gz"
+      sha256 "12af0a4f3ef4a8f4ad7331c802ad5b268c2ecbc51427acf243d4a6467d4fec74"
       def install
         bin.install "lark"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rintays/lark/releases/download/v0.1.4/lark_0.1.4_linux_arm64.tar.gz"
-      sha256 "b0f7c4a4028fe40367477b9927639b95c216f71ecdd6f020b20e229d3e512e8c"
+      url "https://github.com/rintays/lark/releases/download/v0.1.5/lark_0.1.5_linux_arm64.tar.gz"
+      sha256 "b4a94d88793fa42ce8040a503592dac56c959902c2456cfe24ce265b65419dc9"
       def install
         bin.install "lark"
       end
