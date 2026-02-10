@@ -5,21 +5,21 @@
 class Lark < Formula
   desc "A Go CLI for Feishu/Lark inspired by gog"
   homepage "https://github.com/rintays/lark-cli"
-  version "0.1.15"
+  version "0.1.16"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rintays/lark-cli/releases/download/v0.1.15/lark_0.1.15_darwin_amd64.tar.gz"
-      sha256 "97beb3b6ce679e11ab1af0162cb800d0ddeffc117cf08cb3f8f048baaf164213"
+      url "https://github.com/rintays/lark-cli/releases/download/v0.1.16/lark_0.1.16_darwin_amd64.tar.gz"
+      sha256 "2a1159a22dd10c3bc0ab979206acd9d10794d4a78a6a793dfb10752df2c1b29c"
 
       def install
         bin.install "lark"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rintays/lark-cli/releases/download/v0.1.15/lark_0.1.15_darwin_arm64.tar.gz"
-      sha256 "cdd19dd0b250c480a5999336a2485a8942c94728302f72088d3c507793ae8b37"
+      url "https://github.com/rintays/lark-cli/releases/download/v0.1.16/lark_0.1.16_darwin_arm64.tar.gz"
+      sha256 "ac3919a9011621260f30dd31aef469763f2ceed322d342eebf09de7f771ccab2"
 
       def install
         bin.install "lark"
@@ -29,15 +29,15 @@ class Lark < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rintays/lark-cli/releases/download/v0.1.15/lark_0.1.15_linux_amd64.tar.gz"
-      sha256 "1913d0a1231a0d0e494f8d25e8d833e3f34badd88d2f4e6a64ab8cbf456c086a"
+      url "https://github.com/rintays/lark-cli/releases/download/v0.1.16/lark_0.1.16_linux_amd64.tar.gz"
+      sha256 "85ffb66954119fd1fa804e887f739ce1a5e3105fbf457c54c96b376d2979182d"
       def install
         bin.install "lark"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rintays/lark-cli/releases/download/v0.1.15/lark_0.1.15_linux_arm64.tar.gz"
-      sha256 "275f604eda5904f4ea905b8727b679f1bc9e987f5fb5b357e995c180a5c50c1c"
+      url "https://github.com/rintays/lark-cli/releases/download/v0.1.16/lark_0.1.16_linux_arm64.tar.gz"
+      sha256 "98d8608adeb825b887728931ef9bb7f9e717b1ef13848d7ef0c72a74d29293d9"
       def install
         bin.install "lark"
       end
