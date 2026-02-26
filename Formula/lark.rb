@@ -5,23 +5,23 @@
 class Lark < Formula
   desc "A Go CLI for Feishu/Lark inspired by gog"
   homepage "https://github.com/rintays/lark-cli"
-  version "0.1.16"
+  version "0.1.17"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rintays/lark-cli/releases/download/v0.1.16/lark_0.1.16_darwin_amd64.tar.gz"
-      sha256 "2a1159a22dd10c3bc0ab979206acd9d10794d4a78a6a793dfb10752df2c1b29c"
+      url "https://github.com/rintays/lark-cli/releases/download/v0.1.17/lark_0.1.17_darwin_amd64.tar.gz"
+      sha256 "5f2919aab7fdf6821e7b4e3fab5891da478b7cbbd1a2e4c629c5f7052151201e"
 
-      def install
+      define_method(:install) do
         bin.install "lark"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rintays/lark-cli/releases/download/v0.1.16/lark_0.1.16_darwin_arm64.tar.gz"
-      sha256 "ac3919a9011621260f30dd31aef469763f2ceed322d342eebf09de7f771ccab2"
+      url "https://github.com/rintays/lark-cli/releases/download/v0.1.17/lark_0.1.17_darwin_arm64.tar.gz"
+      sha256 "2c5fb4c910c7cbf82b2d186ab9d8e3727119686b8456af1893c463200446f2e7"
 
-      def install
+      define_method(:install) do
         bin.install "lark"
       end
     end
@@ -29,16 +29,16 @@ class Lark < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rintays/lark-cli/releases/download/v0.1.16/lark_0.1.16_linux_amd64.tar.gz"
-      sha256 "85ffb66954119fd1fa804e887f739ce1a5e3105fbf457c54c96b376d2979182d"
-      def install
+      url "https://github.com/rintays/lark-cli/releases/download/v0.1.17/lark_0.1.17_linux_amd64.tar.gz"
+      sha256 "f507afd9eff907194d23340165a7c04fbe749fec314ddedf5898b5b4bcc85fef"
+      define_method(:install) do
         bin.install "lark"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rintays/lark-cli/releases/download/v0.1.16/lark_0.1.16_linux_arm64.tar.gz"
-      sha256 "98d8608adeb825b887728931ef9bb7f9e717b1ef13848d7ef0c72a74d29293d9"
-      def install
+      url "https://github.com/rintays/lark-cli/releases/download/v0.1.17/lark_0.1.17_linux_arm64.tar.gz"
+      sha256 "6fb0eff2addaff9705fdf6080e521d66a1763172ebc050c71bb514785657d734"
+      define_method(:install) do
         bin.install "lark"
       end
     end
